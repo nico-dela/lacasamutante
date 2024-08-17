@@ -1,0 +1,358 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Estilo base para el selector de idioma */
+#languageSelector {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  padding: 5px; /* Espaciado interno */
+  font-size: 14px; /* Tamaño de fuente ajustable */
+  border: 1px solid #ccc; /* Borde del selector */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  #languageSelector {
+    top: 5px; /* Ajusta la distancia desde el margen superior en pantallas pequeñas */
+    left: 5px; /* Ajusta la distancia desde el margen izquierdo en pantallas pequeñas */
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+  }
+}
+
+/* Estilos para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+  #languageSelector {
+    top: 5px; /* Ajusta la distancia desde el margen superior en móviles */
+    left: 5px; /* Ajusta la distancia desde el margen izquierdo en móviles */
+    font-size: 10px; /* Tamaño de fuente más pequeño en móviles */
+  }
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title {
+  margin-top: 20px;
+}
+
+header {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+header img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slide img,
+.slide iframe {
+  width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.accordion-header {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.accordion-header:hover {
+  background: #bee5ecab;
+}
+
+.accordion-content {
+  display: none;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  position: relative;
+}
+
+#productions-buttons-container {
+  position: relative;
+  height: 60vh; /* 60% de la altura de la ventana */
+  border: 1px solid #ccc; /* Opcional: para ver los bordes del contenedor */
+  overflow: hidden; /* Asegúrate de que los botones no se salgan del contenedor */
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.btn-produccion {
+  position: absolute;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.6vw; /* Tamaño de fuente en relación al ancho de la ventana */
+  transform: translate(-50%, -50%);
+  display: block;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.btn-produccion:hover {
+  background: #bee5ecab;
+}
+
+@media (max-width: 768px) {
+  .btn-produccion {
+    font-size: 3vw;
+    padding: 8px 16px;
+  }
+
+  #productions-buttons-container {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-produccion {
+    font-size: 4vw;
+    padding: 6px 12px;
+  }
+
+  #productions-buttons-container {
+    height: 40vh;
+  }
+}
+
+#reloadButtons {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 2%;
+  top: 4%;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+#reloadButtons img {
+  max-width: 70%; /* Ajusta el tamaño máximo de la imagen para que no ocupe todo el botón */
+  max-height: 70%; /* Ajusta el tamaño máximo de la imagen para que no ocupe todo el botón */
+}
+
+#reloadButtons:hover {
+  background-color: #474D45; /* Efecto hover para el botón */
+}
+
+@media (max-width: 768px) {
+  #reloadButtons {
+    width: 40px;
+    height: 40px;
+    right: 3%; /* Ajustamos el margen derecho */
+    top: 3%; /* Ajustamos el margen superior */
+  }
+
+  #reloadButtons img {
+    max-width: 70%; /* Mantenemos el tamaño de la imagen */
+    max-height: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  #reloadButtons {
+    width: 30px;
+    height: 30px;
+    right: 6%; /* Ajustamos el margen derecho */
+    top: 6%; /* Ajustamos el margen superior */
+  }
+
+  #reloadButtons img {
+    max-width: 60%; /* Ajustamos el tamaño máximo de la imagen */
+    max-height: 60%;
+  }
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p.paragraph {
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.5em;
+  padding: 20px;
+  margin: 10px;
+  text-align: justify;
+}
+
+a {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+a:hover {
+  background: #bee5ecab;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #667eea;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: gray;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 1em;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.prev:hover,
+button.next:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p.paragraph {
+    font-size: 1em;
+  }
+}
+
+.item {
+  display: inline-block;
+  margin-bottom: 1rem;

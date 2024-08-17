@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="title"></title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/translations.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
+  </head>
+  <body>
+    <select id="languageSelector">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+    </select>
+    <video class="video-background" autoplay muted loop>
+      <source src="assets/media/portada.mp4" type="video/mp4" />
+      <i18n-key key="videoFallback"></i18n-key>
+    </video>
+    <header style="display: flex; flex-direction: row; justify-content: center">
+      <img
+        style="border-radius: 100px"
+        src="assets/media/lacasa_logo.png"
+        alt="Logo de La Casa Mutante"
+      />
+      <!-- <h1 class="title"><i18n-key key="title"></i18n-key></h1> -->
+    </header>
+    <main>
+      <section id="sobre-la-casa">
+        <h2 class="accordion-header">
+          <i18n-key key="aboutUs.header"></i18n-key>
+        </h2>
+        <div class="accordion-content">
+          <p class="paragraph">
+            <i18n-key key="aboutUs.paragraph1"></i18n-key>
+          </p>
+          <p class="paragraph">
+            <i18n-key key="aboutUs.paragraph2"></i18n-key>
+          </p>
+          <p class="paragraph">
+            <i18n-key key="aboutUs.paragraph3"></i18n-key>
+          </p>
+          <p class="paragraph">
+            <i18n-key key="aboutUs.paragraph4"></i18n-key>
+          </p>
+        </div>
+      </section>
+      <section id="producciones">
+        <h2 class="accordion-header">
+          <i18n-key key="productions.header"></i18n-key>
+        </h2>
+        <div class="accordion-content">
+          <button id="reloadButtons">
+            <img style="width: 50px; height: 50px;" src="assets/media/refresh_icon.png" alt="Actualizar" />
+          </button>
+          <div id="productions-buttons-container"></div>
+        </div>
+      </section>
+      <section id="participa">
+        <h2 class="accordion-header">
+          <i18n-key key="participate.header"></i18n-key>
+        </h2>
+        <div class="accordion-content">
+          <p class="paragraph">
+            <i18n-key key="participate.subtitle"></i18n-key>
+          </p>
+          <p class="paragraph"><i18n-key key="participate.how1"></i18n-key></p>
+          <p class="paragraph"><i18n-key key="participate.how2"></i18n-key></p>
+          <p class="paragraph"><i18n-key key="participate.how3"></i18n-key></p>
+        </div>
+      </section>
+      <section id="contacto">
+        <h2 class="accordion-header">
+          <i18n-key key="contact.header"></i18n-key>
+        </h2>
+        <div class="accordion-content">
+          <p class="paragraph">
+            <i18n-key key="contact.social"></i18n-key>
+          </p>
+          <p class="paragraph">
+            <i18n-key key="contact.location"></i18n-key>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><i18n-key key="footer"></i18n-key></p>
+    </footer>
+  </body>
+</html>
