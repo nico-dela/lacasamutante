@@ -4,28 +4,55 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Función para generar los botones
   function generateProductionButtons() {
-    const productionsButtonsContainer = document.getElementById('productions-buttons-container');
-    productionsButtonsContainer.innerHTML = ''; // Limpiar los botones anteriores
+    const productionsButtonsContainer = document.getElementById(
+      "productions-buttons-container"
+    );
+    productionsButtonsContainer.innerHTML = ""; // Limpiar los botones anteriores
 
     const buttonData = [
-      { name: 'Maizena', url: 'https://open.spotify.com/artist/42HFQJwZtGRwxoVlDwgdgK' },
-      { name: 'Nubila', url: 'https://linktr.ee/nubila' },
-      { name: 'Lara Fernandez', url: 'https://open.spotify.com/artist/691Dk9GKS8rAgDUpfkMwPS' },
-      { name: 'Mateo Genca', url: 'https://open.spotify.com/artist/52zNpUR2AAV4ER89riTHt0' },
-      { name: 'Psieledas', url: 'https://psieledas.bandcamp.com/' },
-      { name: 'Irmanas', url: 'https://www.youtube.com/@Irmanas-wi9zg' },
-      { name: 'Mott', url: 'https://open.spotify.com/artist/5PvNVYs8antCfkOMeESvJu' },
-      { name: 'Yen-ji', url: 'https://open.spotify.com/artist/1b007dZ0opo4WIJK54RYLz' },
-      { name: 'Hechizo Animal', url: 'https://open.spotify.com/artist/2VMcktUnSTqXIBUIUtrW2M' },
-      { name: 'Lava Andina', url: 'https://open.spotify.com/artist/6mIYlnubsoAHVnThMC7CyY' }
+      {
+        name: "Maizena",
+        url: "https://open.spotify.com/artist/42HFQJwZtGRwxoVlDwgdgK",
+      },
+      { name: "Nubila", url: "https://linktr.ee/nubila" },
+      {
+        name: "Lara Fernandez",
+        url: "https://open.spotify.com/artist/691Dk9GKS8rAgDUpfkMwPS",
+      },
+      {
+        name: "Mateo Genca",
+        url: "https://open.spotify.com/artist/52zNpUR2AAV4ER89riTHt0",
+      },
+      { name: "Psieledas", url: "https://psieledas.bandcamp.com/" },
+      { name: "Irmanas", url: "https://www.youtube.com/@Irmanas-wi9zg" },
+      {
+        name: "Mott",
+        url: "https://open.spotify.com/artist/5PvNVYs8antCfkOMeESvJu",
+      },
+      {
+        name: "Yen-ji",
+        url: "https://open.spotify.com/artist/1b007dZ0opo4WIJK54RYLz",
+      },
+      {
+        name: "Hechizo Animal",
+        url: "https://open.spotify.com/artist/2VMcktUnSTqXIBUIUtrW2M",
+      },
+      {
+        name: "Lava Andina",
+        url: "https://open.spotify.com/artist/6mIYlnubsoAHVnThMC7CyY",
+      },
     ];
 
     function shuffle(array) {
-      let currentIndex = array.length, randomIndex;
+      let currentIndex = array.length,
+        randomIndex;
       while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
-        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+        [array[currentIndex], array[randomIndex]] = [
+          array[randomIndex],
+          array[currentIndex],
+        ];
       }
       return array;
     }
@@ -34,12 +61,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const containerWidth = productionsButtonsContainer.clientWidth;
     const containerHeight = productionsButtonsContainer.clientHeight;
 
-    shuffledButtons.forEach(button => {
-      const btn = document.createElement('a');
+    shuffledButtons.forEach((button) => {
+      const btn = document.createElement("a");
       btn.href = button.url;
-      btn.className = 'btn-produccion';
+      btn.className = "btn-produccion";
       btn.textContent = button.name;
-      btn.target = '_blank';
+      btn.target = "_blank";
 
       const btnWidth = 100;
       const btnHeight = 40;
@@ -55,9 +82,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Listener para el botón de recarga
-  const reloadButton = document.getElementById('reloadButtons');
+  const reloadButton = document.getElementById("reloadButtons");
   if (reloadButton) {
-    reloadButton.addEventListener('click', function () {
+    reloadButton.addEventListener("click", function () {
       generateProductionButtons();
     });
   }
