@@ -39,7 +39,7 @@ const translations = {
     title: "La Casa Mutante",
     videoFallback: "Your browser does not support the video tag.",
     aboutUs: {
-      header: "About La Casa",
+      header: "About Us",
       paragraph1:
         "La Casa Mutante is an artistic production space born in the Jardín neighborhood of Córdoba, Argentina. We are a creative and collaborative community that promotes independent cultural production. Collaboration and self-management are our principles.",
       paragraph2:
