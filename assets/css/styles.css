@@ -12,11 +12,39 @@
   font-family: "Nubifont", sans-serif;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+  background-color: #F3F3F3;
   text-align: center;
   padding: 20px;
   position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../media/10285073.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.3; /* Ajusta este valor para cambiar la opacidad */
+  z-index: -1;
 }
 
 #languageSelector {
@@ -81,7 +109,6 @@ body {
   font-size: 3em;
   font-weight: bold;
   margin-top: 20px;
-  color: #ffffff;
   background-clip: text;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -176,16 +203,18 @@ section {
   width: 50%;
   margin: 5px auto;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .accordion-header:hover {
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.1); */
+  font-weight: bold;
 }
 
 .accordion-content {
   display: none;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   position: relative;
 }
@@ -193,10 +222,10 @@ section {
 #productions-buttons-container {
   position: relative;
   height: 60vh;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   overflow-y: auto;
   overflow-x: hidden;
-  background: rgba(0, 0, 0, 0.1);
+  /* background: rgba(0, 0, 0, 0.1); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,7 +235,7 @@ section {
 .btn-production {
   width: 100%;
   padding: 10px 20px;
-  color: white;
+  color: black;
   text-align: left;
   border-radius: 5px;
   text-decoration: none;
@@ -250,7 +279,7 @@ p.paragraph {
 }
 
 a {
-  color: #fff;
+  color: black;
   padding: 5px 10px;
   border-radius: 5px;
   text-decoration: none;
@@ -258,8 +287,10 @@ a {
 }
 
 a:hover {
-  color: #bee5ecab;
   font-weight: bold;
+  background-clip: text;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease-in-out;
 }
 
 form {
