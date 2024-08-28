@@ -14,7 +14,7 @@ const translations = {
         "<strong>Valores y Objetivos:</strong> Nos negamos a encasillarnos en categorías rígidas y buscamos que múltiples proyectos coexistan en armonía. Creemos en crear en conjunto y en que la elaboración artística siempre es integral. Hemos creado demasiadas separaciones que diluyen el sentido de hacer. No nos interesan las medallas, ni los laureles. Valoramos lo no racional y confiamos en la sincronía colectiva como una poética que guía, ofrece temáticas, organiza política. Queremos crear un paréntesis de tiempo y espacio donde la creatividad y la inspiración se alimenten mutuamente.",
     },
     productions: {
-      header: "Producciones, Proyectos y Artistas",
+      header: "Producciones - Proyectos - Artistas",
       img1: "Producción 1",
       img2: "Producción 2",
       img3: "Producción 3",
@@ -50,7 +50,7 @@ const translations = {
         "<strong>Values and Objectives:</strong> We refuse to pigeonhole ourselves into rigid categories and seek for multiple projects to coexist in harmony. We believe in creating together and that artistic elaboration is always integral. We have created too many separations that dilute the sense of doing. We are not interested in medals or laurels. We value the non-rational and trust in collective synchronicity as a poetics that guides, offers themes, organizes politics. We want to create a parenthesis of time and space where creativity and inspiration mutually nourish each other.",
     },
     productions: {
-      header: "Productions, Projects and Artists",
+      header: "Productions - Projects - Artists",
       img1: "Production 1",
       img2: "Production 2",
       img3: "Production 3",
