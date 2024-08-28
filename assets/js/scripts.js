@@ -38,6 +38,22 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Lava Andina",
         url: "https://open.spotify.com/artist/6mIYlnubsoAHVnThMC7CyY",
       },
+      {
+        name: "Araceli Bonfigli",
+        url: "https://open.spotify.com/artist/6bj6JfRNNwpb3gpYDXEm2F",
+      },
+      {
+        name: "Candela Gencarelli",
+        url: "https://linktr.ee/candelagencarelli",
+      },
+      {
+        name: "Luz Peña",
+        url: "https://www.instagram.com/luz.penia/",
+      },
+      {
+        name: "Lil Lise",
+        url: "https://www.behance.net/ulisesgencare",
+      }
     ];
 
     function shuffle(array) {
