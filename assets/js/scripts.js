@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const productionsButtonsContainer = document.getElementById(
       "productions-buttons-container"
     );
-    productionsButtonsContainer.innerHTML = ""; // Limpiar los botones anteriores
 
     const buttonData = [
       {
@@ -58,34 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const shuffledButtons = shuffle(buttonData);
-    const containerWidth = productionsButtonsContainer.clientWidth;
-    const containerHeight = productionsButtonsContainer.clientHeight;
 
     shuffledButtons.forEach((button) => {
       const btn = document.createElement("a");
       btn.href = button.url;
-      btn.className = "btn-produccion";
+      btn.className = "btn-production";
       btn.textContent = button.name;
       btn.target = "_blank";
 
-      const btnWidth = 100;
-      const btnHeight = 40;
-
-      const x = Math.random() * (containerWidth - btnWidth);
-      const y = Math.random() * (containerHeight - btnHeight);
-
-      btn.style.left = `${x}px`;
-      btn.style.top = `${y}px`;
-
       productionsButtonsContainer.appendChild(btn);
-    });
-  }
-
-  // Listener para el botón de recarga
-  const reloadButton = document.getElementById("reloadButtons");
-  if (reloadButton) {
-    reloadButton.addEventListener("click", function () {
-      generateProductionButtons();
     });
   }
 
