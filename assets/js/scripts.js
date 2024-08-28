@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Mantener la referencia a la bandera de generación de botones
   let buttonsGenerated = false;
 
-  // Función para generar los botones
   function generateProductionButtons() {
     const productionsButtonsContainer = document.getElementById(
       "productions-buttons-container"
@@ -69,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Código existente para manejar la generación inicial de los botones
   const headers = document.querySelectorAll(".accordion-header");
 
   headers.forEach((header) => {
@@ -90,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Código existente para la traducción
   const languageSelector = document.getElementById("languageSelector");
 
   if (languageSelector) {
