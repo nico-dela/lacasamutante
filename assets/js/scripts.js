@@ -93,6 +93,11 @@ document.addEventListener("DOMContentLoaded", function () {
         url: "https://www.youtube.com/watch?v=_PjW0kjIeWQ&list=PLESwDoZ83GEbK4N9g2EetGp5KIN-HuE2k",
         category: "Produccion",
       },
+      {
+        name: "Arte Vago",
+        url: "https://www.instagram.com/artevago/",
+        category: "Artista",
+      },
     ];
 
     const categoryColors = {
