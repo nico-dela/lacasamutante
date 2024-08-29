@@ -12,11 +12,24 @@
   font-family: "Nubifont", sans-serif;
 }
 
+html,
 body {
-  color: #fff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+  background-color: #f3f3f3;
   text-align: center;
   padding: 20px;
   position: relative;
+  min-height: 100vh;
+  margin: 0;
 }
 
 #languageSelector {
@@ -81,7 +94,6 @@ body {
   font-size: 3em;
   font-weight: bold;
   margin-top: 20px;
-  color: #ffffff;
   background-clip: text;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -176,63 +188,48 @@ section {
   width: 50%;
   margin: 5px auto;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .accordion-header:hover {
-  background: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
 }
 
 .accordion-content {
   display: none;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   position: relative;
 }
 
 #productions-buttons-container {
-  position: relative;
-  height: 60vh;
-  border: 1px solid #ccc;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background: rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-start;
   padding: 10px;
 }
 
 .btn-production {
-  width: 100%;
-  padding: 10px 20px;
-  color: white;
+  display: inline;
+  padding: 0 10px;
+  margin: 5px 0;
+  font-size: 1.4vw;
   text-align: left;
-  border-radius: 5px;
   text-decoration: none;
-  font-size: 1.8vw;
-  z-index: 2;
 }
 
 @media (max-width: 768px) {
   .btn-production {
     font-size: 3vw;
-    padding: 8px 16px;
-  }
-
-  #productions-buttons-container {
-    height: 50vh;
   }
 }
 
 @media (max-width: 480px) {
   .btn-production {
     font-size: 4vw;
-    padding: 6px 12px;
-  }
-
-  #productions-buttons-container {
-    height: 40vh;
   }
 }
 
@@ -250,7 +247,7 @@ p.paragraph {
 }
 
 a {
-  color: #fff;
+  color: black;
   padding: 5px 10px;
   border-radius: 5px;
   text-decoration: none;
@@ -258,29 +255,7 @@ a {
 }
 
 a:hover {
-  color: #bee5ecab;
   font-weight: bold;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-label {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-input {
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  width: 80%;
-  max-width: 400px;
 }
 
 button {

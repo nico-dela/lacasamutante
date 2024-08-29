@@ -10,51 +10,101 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         name: "Maizena",
         url: "https://open.spotify.com/artist/42HFQJwZtGRwxoVlDwgdgK",
+        category: "Proyecto",
       },
-      { name: "Nubila", url: "https://linktr.ee/nubila" },
+      { name: "Nubila", url: "https://linktr.ee/nubila", category: "Proyecto" },
       {
         name: "Lara Fernandez",
         url: "https://open.spotify.com/artist/691Dk9GKS8rAgDUpfkMwPS",
+        category: "Artista",
       },
       {
         name: "Mateo Genca",
         url: "https://open.spotify.com/artist/52zNpUR2AAV4ER89riTHt0",
+        category: "Artista",
       },
-      { name: "Psieledas", url: "https://psieledas.bandcamp.com/" },
-      { name: "Irmanas", url: "https://www.youtube.com/@Irmanas-wi9zg" },
+      {
+        name: "Psieledas",
+        url: "https://psieledas.bandcamp.com/",
+        category: "Artista",
+      },
+      {
+        name: "Irmanas",
+        url: "https://www.youtube.com/@Irmanas-wi9zg",
+        category: "Proyecto",
+      },
       {
         name: "Mott",
         url: "https://open.spotify.com/artist/5PvNVYs8antCfkOMeESvJu",
+        category: "Proyecto",
       },
       {
         name: "Yen-ji",
         url: "https://open.spotify.com/artist/1b007dZ0opo4WIJK54RYLz",
+        category: "Artista",
       },
       {
         name: "Hechizo Animal",
         url: "https://open.spotify.com/artist/2VMcktUnSTqXIBUIUtrW2M",
+        category: "Proyecto",
       },
       {
         name: "Lava Andina",
         url: "https://open.spotify.com/artist/6mIYlnubsoAHVnThMC7CyY",
+        category: "Proyecto",
       },
       {
         name: "Araceli Bonfigli",
         url: "https://open.spotify.com/artist/6bj6JfRNNwpb3gpYDXEm2F",
+        category: "Artista",
       },
       {
         name: "Candela Gencarelli",
         url: "https://linktr.ee/candelagencarelli",
+        category: "Artista",
       },
       {
         name: "Luz Peña",
         url: "https://www.instagram.com/luz.penia/",
+        category: "Artista",
       },
       {
         name: "Lil Lise",
         url: "https://www.behance.net/ulisesgencare",
-      }
+        category: "Artista",
+      },
+      {
+        name: "La Casa Mutante - Temporada 1",
+        url: "https://www.youtube.com/watch?v=xXGEXSVwzXk&list=PLCeJy5MptJ4QHl4z13LUp8Lmk3Hvl-6Io",
+        category: "Produccion",
+      },
+      {
+        name: "La Casa Mutante - Temporada 2",
+        url: "https://www.youtube.com/watch?v=CvDeJE-kOhc&list=PLCeJy5MptJ4TM1SpukK3oht5s58FxZJCV",
+        category: "Produccion",
+      },
+      {
+        name: "Canciones en Cuarentena",
+        url: "https://www.youtube.com/watch?v=ORsTN_cmG0w&list=PLCeJy5MptJ4RHEjXogCtEE9hxEpZSMeSr",
+        category: "Produccion",
+      },
+      {
+        name: "Origamy Sessions",
+        url: "https://www.youtube.com/watch?v=_PjW0kjIeWQ&list=PLESwDoZ83GEbK4N9g2EetGp5KIN-HuE2k",
+        category: "Produccion",
+      },
+      {
+        name: "Arte Vago",
+        url: "https://www.instagram.com/artevago/",
+        category: "Artista",
+      },
     ];
+
+    const categoryColors = {
+      "Artista": "#D95E5B",    // Color rojo
+      "Produccion": "#3A54A1", // Color azul
+      "Proyecto": "black"      // Color negro
+    };
 
     function shuffle(array) {
       let currentIndex = array.length,
@@ -78,6 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.className = "btn-production";
       btn.textContent = button.name;
       btn.target = "_blank";
+      btn.style.color = categoryColors[button.category] || "black";
 
       productionsButtonsContainer.appendChild(btn);
     });
