@@ -101,9 +101,9 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     const categoryColors = {
-      "Artista": "#D95E5B",    // Color rojo
-      "Produccion": "#3A54A1", // Color azul
-      "Proyecto": "black"      // Color negro
+      Artista: "#D95E5B",
+      Produccion: "#3A54A1",
+      Proyecto: "#A29359",
     };
 
     function shuffle(array) {
