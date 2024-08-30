@@ -98,6 +98,46 @@ document.addEventListener("DOMContentLoaded", function () {
         url: "https://www.instagram.com/artevago/",
         category: "Artista",
       },
+      {
+        name: "Llanos Art",
+        url: "https://linktr.ee/llanosart",
+        category: "Artista",
+      },
+      {
+        name: "Andy Genca",
+        url: "https://open.spotify.com/artist/3nC0XPIkpWnYU49fCvk3r0",
+        category: "Artista",
+      },
+      {
+        name: "En la lista - Podcast",
+        url: "https://www.instagram.com/enlalista/",
+        category: "Proyecto",
+      },
+      {
+        name: "Facundo Caceres",
+        url: "https://www.youtube.com/watch?v=Wk3Vi8BAsEs",
+        category: "Artista",
+      },
+      {
+        name: "Facundo Rodriguez",
+        url: "https://linktr.ee/facurodriguezalochis",
+        category: "Artista",
+      },
+      {
+        name: "Ariana Rios + Loli Rodriguez",
+        url: "https://estilismo.myportfolio.com/",
+        category: "Proyecto",
+      },
+      {
+        name: "Las Cascara",
+        url: "https://www.instagram.com/lascascara/",
+        category: "Proyecto",
+      },
+      {
+        name: "Agui Guillen",
+        url: "https://www.instagram.com/agui_guillen/",
+        category: "Artista",
+      },
     ];
 
     const categoryColors = {
