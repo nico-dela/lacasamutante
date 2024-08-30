@@ -138,6 +138,11 @@ document.addEventListener("DOMContentLoaded", function () {
         url: "https://www.instagram.com/agui_guillen/",
         category: "Artista",
       },
+      {
+        name: "Nico de la Cruz",
+        url: "https://github.com/nico-dela",
+        category: "Artista",
+      },
     ];
 
     const categoryColors = {
