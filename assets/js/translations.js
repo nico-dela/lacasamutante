@@ -15,9 +15,6 @@ const translations = {
     },
     productions: {
       header: "Producciones, Proyectos y Artistas",
-      img1: "Producción 1",
-      img2: "Producción 2",
-      img3: "Producción 3",
     },
     participate: {
       header: "Participa",
