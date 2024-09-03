@@ -147,8 +147,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const categoryColors = {
       Artista: "#000",
-      Produccion: "#2E43E8",
-      Proyecto: "#D95E5B",
+      Produccion: "#1e75c5",
+      Proyecto: "#ef332e",
     };
 
     const categoryStyle = {
@@ -182,7 +182,6 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.style.color = categoryColors[button.category] || "black";
       btn.style.fontStyle = categoryStyle[button.category] || "none";
       btn.style.textTransform = categoryStyle[button.category] || "none";
-      
 
       productionsButtonsContainer.appendChild(btn);
     });
