@@ -187,7 +187,6 @@ h2 {
 }
 
 p.paragraph {
-  font-family: "Helvetica", sans-serif;
   font-size: 1.5em;
   padding: 20px;
   margin: 10px;
@@ -239,9 +238,4 @@ footer {
   p.paragraph {
     font-size: 1em;
   }
-}
-
-.item {
-  display: inline-block;
-  margin-bottom: 1rem;
 }
