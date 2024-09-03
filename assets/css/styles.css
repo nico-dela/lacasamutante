@@ -126,6 +126,7 @@ main {
   border-radius: 5px;
   position: relative;
   transition: max-height 0.5s ease, padding 0.5s ease;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
