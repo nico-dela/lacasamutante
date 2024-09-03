@@ -184,17 +184,32 @@ document.addEventListener("DOMContentLoaded", function () {
   headers.forEach((header) => {
     header.addEventListener("click", function () {
       const content = this.nextElementSibling;
-      const isVisible = content.style.display === "block";
 
-      content.style.display = isVisible ? "none" : "block";
-
-      if (
-        this.parentElement.id === "producciones" &&
-        !isVisible &&
-        !buttonsGenerated
-      ) {
+      if (this.parentElement.id === "producciones" && !buttonsGenerated) {
         generateProductionButtons();
         buttonsGenerated = true;
+      }
+
+      const isActive = this.classList.contains("active");
+
+      document
+        .querySelectorAll(".accordion-header.active")
+        .forEach((activeHeader) => {
+          if (activeHeader !== this) {
+            activeHeader.classList.remove("active");
+            activeHeader.nextElementSibling.style.maxHeight = "0";
+            activeHeader.nextElementSibling.style.padding = "0 10px";
+          }
+        });
+
+      this.classList.toggle("active", !isActive);
+
+      if (!isActive) {
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.padding = "10px";
+      } else {
+        content.style.maxHeight = "0";
+        content.style.padding = "0 10px";
       }
     });
   });

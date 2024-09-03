@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: scroll;
   color: black;
   text-align: center;
   padding: 20px;
@@ -95,10 +96,9 @@ body {
 .title {
   font-size: 3em;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 10px;
   background-clip: text;
   text-transform: uppercase;
-  letter-spacing: 2px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease-in-out;
 }
@@ -187,7 +187,7 @@ section {
   cursor: pointer;
   border-radius: 5px;
   transition: background 0.3s;
-  width: 50%;
+  width: 100%;
   margin: 5px auto;
   text-transform: uppercase;
   font-weight: normal;
@@ -198,11 +198,18 @@ section {
 }
 
 .accordion-content {
-  display: none;
-  padding: 20px;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 30px;
   background: rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   position: relative;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-header.active + .accordion-content {
+  max-height: 500px;
+  padding: 20px;
 }
 
 #productions-buttons-container {
@@ -218,7 +225,7 @@ section {
   display: inline;
   padding: 0 10px;
   margin: 5px 0;
-  font-size: 1.4vw;
+  font-size: 1.6vw;
   text-align: left;
   text-decoration: none;
 }
