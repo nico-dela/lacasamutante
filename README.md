@@ -30,7 +30,7 @@ Este es el sitio web oficial de **La Casa Mutante**, un espacio de producción a
 - **Contenido**: Actualiza las secciones en `index.html` para cambiar el contenido del sitio web.
 
 ### Licencia
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto está licenciado bajo la Licencia GPL-3.0. Consulta el archivo `LICENSE` para más detalles.
 
 ---
 
@@ -64,4 +64,4 @@ This is the official website of **La Casa Mutante**, an artistic production spac
 - **Content**: Update the sections in `index.html` to change the website's content.
 
 ### License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the GPL-3.0 License. See the `LICENSE` file for details.
