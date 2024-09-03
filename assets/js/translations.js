@@ -30,7 +30,7 @@ const translations = {
       location: "Ubicación: Bº Jardín, Córdoba, Argentina.",
     },
     footer:
-      "Distribuido bajo la licencia <a href='https://opensource.org/licenses/GPL-3.0' target='_blank'>GPL-3.0</a>. ¡Compártelo y contribuye!",
+      "Distribuido bajo la licencia <a href='https://choosealicense.com/' target='_blank'>GPL-3.0</a>. ¡Compártelo y contribuye!",
   },
   en: {
     title: "La Casa Mutante",
