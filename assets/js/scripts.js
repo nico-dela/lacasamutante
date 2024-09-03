@@ -146,9 +146,15 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     const categoryColors = {
-      Artista: "#D95E5B",
-      Produccion: "#3A54A1",
-      Proyecto: "#A29359",
+      Artista: "#000",
+      Produccion: "#2E43E8",
+      Proyecto: "#D95E5B",
+    };
+
+    const categoryStyle = {
+      Artista: "italic",
+      Produccion: "lowercase",
+      Proyecto: "uppercase",
     };
 
     function shuffle(array) {
@@ -174,6 +180,9 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.textContent = button.name;
       btn.target = "_blank";
       btn.style.color = categoryColors[button.category] || "black";
+      btn.style.fontStyle = categoryStyle[button.category] || "none";
+      btn.style.textTransform = categoryStyle[button.category] || "none";
+      
 
       productionsButtonsContainer.appendChild(btn);
     });
