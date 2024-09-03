@@ -5,13 +5,13 @@ const translations = {
     aboutUs: {
       header: "Sobre La Casa",
       paragraph1:
-        "La Casa Mutante es un espacio de producción artística que nació en el barrio Jardín de Córdoba, Argentina. Somos una comunidad creativa y colaborativa que fomenta la producción cultural independiente. La colaboración y la autogestión son nuestros principios.",
+        "Somos un espacio de producción artística ubicado en el barrio Jardín de Córdoba, Argentina. Nos dedicamos a fomentar la producción cultural independiente mediante la colaboración y la autogestión.",
       paragraph2:
-        "<strong>Nuestra Historia:</strong> La Casa Mutante surge hace diez años de la necesidad de abrir un espacio donde podamos crear con otrxs, en el que las ocurrencias y pensamientos - que a veces parecen poco importantes - puedan florecer libremente. Nuestro propósito es alimentar la creatividad y darle un sustento para su realización, inspirar la producción artística y promover un entorno donde las ganas de crear en grupo sean la fuerza motriz. Desde nuestros inicios, hemos producido numerosos videos, discos y podcasts, trabajando colectivamente para aportar al arte cordobés.",
+        "<strong>Nuestra Historia:</strong> Nacimos hace diez años con el objetivo de abrir un espacio colaborativo donde las ideas y pensamientos puedan florecer libremente. Buscamos alimentar la creatividad, inspirar la producción artística y promover un entorno donde la creación grupal sea la fuerza motriz. Desde entonces, hemos producido numerosos videos, discos y podcasts, trabajando colectivamente para contribuir al arte cordobés.",
       paragraph3:
-        "<strong>Nuestro Equipo:</strong> Somos un equipo diverso y en constante evolución, formado por personas de distintxs orígenes y amores: plásticos, musicales, visuales, poéticos, tecnológicos, científicos, políticos. Nos unen las ganas de hacer y la confianza en un flujo común y colectivo. Cada miembro aporta su energía y visión, haciendo de La Casa Mutante un lugar de creación continua.",
+        "<strong>Nuestro Equipo:</strong> Contamos con un equipo diverso y en constante evolución, compuesto por personas de distintos orígenes y áreas de interés: plásticos, musicales, visuales, poéticos, tecnológicos, científicos, políticos. Cada miembro aporta su energía y visión, haciendo de nuestro espacio un lugar de creación continua.",
       paragraph4:
-        "<strong>Valores y Objetivos:</strong> Nos negamos a encasillarnos en categorías rígidas y buscamos que múltiples proyectos coexistan en armonía. Creemos en crear en conjunto y en que la elaboración artística siempre es integral. Hemos creado demasiadas separaciones que diluyen el sentido de hacer. No nos interesan las medallas, ni los laureles. Valoramos lo no racional y confiamos en la sincronía colectiva como una poética que guía, ofrece temáticas, organiza política. Queremos crear un paréntesis de tiempo y espacio donde la creatividad y la inspiración se alimenten mutuamente.",
+        "<strong>Valores y Objetivos:</strong> Nos esforzamos por evitar las categorías rígidas y fomentar la coexistencia armoniosa de múltiples proyectos. Creemos en la creación conjunta y en la integralidad del proceso artístico. Rechazamos las separaciones que diluyen el sentido de hacer y valoramos la sincronía colectiva como una poética que guía, organiza y ofrece temáticas. Queremos crear un espacio donde la creatividad y la inspiración se alimenten mutuamente.",
     },
     productions: {
       header: "Producciones, Proyectos y Artistas",
@@ -26,7 +26,7 @@ const translations = {
     contact: {
       header: "Contacto",
       social:
-        "Redes Sociales: Síguenos en nuestras redes sociales para mantenerte al día con las novedades y eventos de La Casa Mutante. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Instagram</a> & <a href='https://www.youtube.com/@lacasamutante7513' target='_blank'>YouTube</a>",
+        "Redes Sociales: Síguenos en nuestras redes sociales para mantenerte al día con las novedades y eventos. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Instagram</a> & <a href='https://www.youtube.com/@lacasamutante7513' target='_blank'>YouTube</a>",
       location: "Ubicación: Bº Jardín, Córdoba, Argentina.",
     },
     footer:
@@ -38,13 +38,13 @@ const translations = {
     aboutUs: {
       header: "About Us",
       paragraph1:
-        "La Casa Mutante is an artistic production space born in the Jardín neighborhood of Córdoba, Argentina. We are a creative and collaborative community that promotes independent cultural production. Collaboration and self-management are our principles.",
+        "We are an artistic production space located in the Jardín neighborhood of Córdoba, Argentina. We focus on promoting independent cultural production through collaboration and self-management.",
       paragraph2:
-        "<strong>Our History:</strong> La Casa Mutante emerged ten years ago from the need to open a space where we can create with others, where occurrences and thoughts - which sometimes seem unimportant - can flourish freely. Our purpose is to nurture creativity and give it support for its realization, to inspire artistic production and promote an environment where the desire to create as a group is the driving force. Since our beginnings, we have produced numerous videos, records, and podcasts, working collectively to contribute to the Cordoban art.",
+        "<strong>Our History:</strong> We emerged ten years ago with the aim of creating a collaborative space where ideas and thoughts could flourish freely. Our mission is to nurture creativity, inspire artistic production, and foster an environment where group creation drives us forward. Since then, we have produced numerous videos, records, and podcasts, working collectively to contribute to Cordoban art.",
       paragraph3:
-        "<strong>Our Team:</strong> We are a diverse and constantly evolving team, made up of people from different origins and loves: plastic, musical, visual, poetic, technological, scientific, political. We are united by the desire to do and the trust in a common and collective flow. Each member contributes their energy and vision, making La Casa Mutante a place of continuous creation.",
+        "<strong>Our Team:</strong> Our diverse and constantly evolving team is made up of individuals from various backgrounds and interests: visual, musical, poetic, technological, scientific, and political. Each member brings their energy and vision, making our space a place of continuous creation.",
       paragraph4:
-        "<strong>Values and Objectives:</strong> We refuse to pigeonhole ourselves into rigid categories and seek for multiple projects to coexist in harmony. We believe in creating together and that artistic elaboration is always integral. We have created too many separations that dilute the sense of doing. We are not interested in medals or laurels. We value the non-rational and trust in collective synchronicity as a poetics that guides, offers themes, organizes politics. We want to create a parenthesis of time and space where creativity and inspiration mutually nourish each other.",
+        "<strong>Values and Objectives:</strong> We strive to avoid rigid categories and promote the harmonious coexistence of multiple projects. We believe in creating together and that artistic elaboration is always integral. We reject separations that dilute the sense of doing and value collective synchronicity as a guiding poetic. Our goal is to create a space where creativity and inspiration mutually nourish each other.",
     },
     productions: {
       header: "Productions, Projects and Artists",
@@ -53,13 +53,13 @@ const translations = {
       header: "Participate",
       subtitle: "How can you contribute to the Project?",
       how1: "<strong>Sharing your works:</strong> Share your artistic or musical creations with us. We aim to circulate and forge joint paths so that more people can enjoy the art. We are open to discovering new ways to collaborate between artists and their works.",
-      how2: "<strong>With your work:</strong> Join our team. If you are interested in audiovisual work and musical performances, you can help in areas such as costumes, set design, lighting, post-production, sound, and camera work. Sign up here <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Registration Form</a>.",
+      how2: "<strong>With your work:</strong> Join our team. If you are interested in audiovisual work and musical performances, you can assist in areas such as costumes, set design, lighting, post-production, sound, and camera work. Sign up here <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Registration Form</a>.",
       how3: "<strong>With a financial contribution:</strong> Support the growth of La Casa Mutante. You can make a donation through our virtual piggy bank to help sustain our activities and projects. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Contribute here</a>.",
     },
     contact: {
       header: "Contact",
       social:
-        "Social Media: Follow us on our social networks to stay up to date with the latest news and events from La Casa Mutante. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Instagram</a> & <a href='https://www.youtube.com/@lacasamutante7513' target='_blank'>YouTube</a>",
+        "Social Media: Follow us on our social networks to stay up to date with the latest news and events. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Instagram</a> & <a href='https://www.youtube.com/@lacasamutante7513' target='_blank'>YouTube</a>",
       location: "Location: Jardín neighborhood, Córdoba, Argentina.",
     },
     footer:
