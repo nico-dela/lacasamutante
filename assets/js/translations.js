@@ -33,7 +33,7 @@ const translations = {
       location: "Ubicación: Bº Jardín, Córdoba, Argentina.",
     },
     footer:
-      "© 2024 La Casa Mutante. Distribuido bajo la licencia <a href='https://opensource.org/licenses/GPL-3.0' target='_blank'>GPL-3.0</a>. ¡Compártelo y contribuye!",
+      "Distribuido bajo la licencia <a href='https://opensource.org/licenses/GPL-3.0' target='_blank'>GPL-3.0</a>. ¡Compártelo y contribuye!",
   },
   en: {
     title: "La Casa Mutante",
@@ -69,7 +69,7 @@ const translations = {
       location: "Location: Jardín neighborhood, Córdoba, Argentina.",
     },
     footer:
-      "© 2024 La Casa Mutante. Distributed under the <a href='https://opensource.org/licenses/GPL-3.0' target='_blank'>GPL-3.0</a> license. Share and contribute!",
+      "Distributed under the <a href='https://opensource.org/licenses/GPL-3.0' target='_blank'>GPL-3.0</a> license. Share and contribute!",
   },
 };
 
