@@ -3,7 +3,7 @@
 ## Español
 
 ### Descripción
-Este es el sitio web oficial de **La Casa Mutante**, un espacio de producción artística en Córdoba, Argentina. El sitio web está diseñado utilizando HTML, CSS y JavaScript.
+El sitio web está diseñado utilizando HTML, CSS y JavaScript.
 
 ### Cómo Usar
 1. **Clonar el repositorio**:
@@ -24,7 +24,7 @@ Este proyecto está licenciado bajo la Licencia GPL-3.0. Consulta el archivo `LI
 ## English
 
 ### Description
-This is the official website of **La Casa Mutante**, an artistic production space in Córdoba, Argentina. The website is designed using HTML, CSS, and JavaScript.
+The website is designed using HTML, CSS, and JavaScript.
 
 ### How to Use
 1. **Clone the repository**:
