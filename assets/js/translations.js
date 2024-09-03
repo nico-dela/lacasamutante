@@ -30,7 +30,7 @@ const translations = {
       location: "Ubicación: Bº Jardín, Córdoba, Argentina.",
     },
     footer:
-      "Distribuido bajo la licencia <a href='https://choosealicense.com/' target='_blank'>GPL-3.0</a>. ¡Compártelo y contribuye!",
+      "Este sitio fue creado enteramente por artistxs y técnicxs de La Casa.",
   },
   en: {
     title: "La Casa Mutante",
@@ -48,9 +48,6 @@ const translations = {
     },
     productions: {
       header: "Productions, Projects and Artists",
-      img1: "Production 1",
-      img2: "Production 2",
-      img3: "Production 3",
     },
     participate: {
       header: "Participate",
@@ -66,7 +63,7 @@ const translations = {
       location: "Location: Jardín neighborhood, Córdoba, Argentina.",
     },
     footer:
-      "Distributed under the <a href='https://opensource.org/licenses/GPL-3.0' target='_blank'>GPL-3.0</a> license. Share and contribute!",
+      "This website was entirely created by artists and technicians of La Casa.",
   },
 };
 
