@@ -8,18 +8,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const buttonData = [
       {
-        name: "Maizena",
+        name: "Maizena É Á",
         url: "https://open.spotify.com/artist/42HFQJwZtGRwxoVlDwgdgK",
         category: "Proyecto",
       },
-      { name: "Nubila", url: "https://linktr.ee/nubila", category: "Proyecto" },
+      { name: "Á Nubila", url: "https://linktr.ee/nubila", category: "Proyecto" },
       {
-        name: "Lara Fernandez",
+        name: "Lara Fernandez Ú",
         url: "https://open.spotify.com/artist/691Dk9GKS8rAgDUpfkMwPS",
         category: "Artista",
       },
       {
-        name: "Mateo Genca",
+        name: "Ñ Mateo Genca",
         url: "https://open.spotify.com/artist/52zNpUR2AAV4ER89riTHt0",
         category: "Artista",
       },
