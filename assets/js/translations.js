@@ -18,15 +18,15 @@ const translations = {
     },
     participate: {
       header: "Participa",
-      subtitle: "¿Cómo podés sumar al Proyecto?",
+      subtitle: "¿Como podes sumar al Proyecto?",
       how1: "<strong>Compartiendo tus obras:</strong> Comparte tu producción artística o musical con nosotros. Nos gustaría circular y hacer caminos conjuntos para que más personas puedan disfrutar del arte. Estamos dispuestxs a encontrar nuevas formas de colaborar entre artistas y obras.",
       how2: "<strong>Con tu fuerza trabajo:</strong> Unite a nuestro equipo. Si te interesa el trabajo audiovisual y los espectáculos musicales, puedes colaborar en áreas como vestuario, escenografía, iluminación, postproducción, sonido, y cámara. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Inscríbete aquí</a>.",
-      how3: "<strong>Con una contribución económica:</strong> Apoya el crecimiento de La Casa Mutante. Puedes hacer una donación a través de nuestra alcancía virtual y ayudar a sostener nuestras actividades y proyectos. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Contribuye aquí</a>.",
+      how3: "<strong>Con una contribución económica:</strong> Apoya el crecimiento de La Casa Mutante. Podes hacer una donación a través de nuestra alcancía virtual y ayudar a sostener nuestras actividades y proyectos. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Contribuye aquí</a>.",
     },
     contact: {
       header: "Contacto",
       social:
-        "Redes Sociales: Síguenos en nuestras redes sociales para mantenerte al día con las novedades y eventos. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Instagram</a> & <a href='https://www.youtube.com/@lacasamutante7513' target='_blank'>YouTube</a>",
+        "Redes Sociales: Síguenos en nuestras redes sociales para mantenerte al día con las novedades y eventos. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Instagram</a> y <a href='https://www.youtube.com/@lacasamutante7513' target='_blank'>YouTube</a>",
       location: "Ubicación: Bº Jardín, Córdoba, Argentina.",
     },
     footer:
@@ -59,7 +59,7 @@ const translations = {
     contact: {
       header: "Contact",
       social:
-        "Social Media: Follow us on our social networks to stay up to date with the latest news and events. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Instagram</a> & <a href='https://www.youtube.com/@lacasamutante7513' target='_blank'>YouTube</a>",
+        "Social Media: Follow us on our social networks to stay up to date with the latest news and events. <a href='https://www.instagram.com/la.casa.mutante/' target='_blank'>Instagram</a> and <a href='https://www.youtube.com/@lacasamutante7513' target='_blank'>YouTube</a>",
       location: "Location: Jardín neighborhood, Córdoba, Argentina.",
     },
     footer:
