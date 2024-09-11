@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const buttonData = [
       {
-        name: "Maizena É Á",
+        name: "Maizena Á",
         url: "https://open.spotify.com/artist/42HFQJwZtGRwxoVlDwgdgK",
         category: "Proyecto",
       },
@@ -19,12 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Artista",
       },
       {
-        name: "Ñ Mateo Genca",
+        name: "É Mateo Genca",
         url: "https://open.spotify.com/artist/52zNpUR2AAV4ER89riTHt0",
         category: "Artista",
       },
       {
-        name: "Psieledas",
+        name: "Psieledas Ó",
         url: "https://psieledas.bandcamp.com/",
         category: "Artista",
       },
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Proyecto",
       },
       {
-        name: "Yen-ji",
+        name: "Yen - ji",
         url: "https://open.spotify.com/artist/1b007dZ0opo4WIJK54RYLz",
         category: "Artista",
       },
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Artista",
       },
       {
-        name: "Candela Gencarelli",
+        name: "Í Candela Gencarelli",
         url: "https://linktr.ee/candelagencarelli",
         category: "Artista",
       },
