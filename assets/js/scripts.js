@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Proyecto",
       },
       {
-        name: "Yen - ji",
+        name: "É Yen - ji",
         url: "https://open.spotify.com/artist/1b007dZ0opo4WIJK54RYLz",
         category: "Artista",
       },
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Proyecto",
       },
       {
-        name: "Lava Andina",
+        name: "Lava Andina Á",
         url: "https://open.spotify.com/artist/6mIYlnubsoAHVnThMC7CyY",
         category: "Proyecto",
       },
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Artista",
       },
       {
-        name: "Lil Lise",
+        name: "Lil Lise Ó",
         url: "https://www.behance.net/ulisesgencare",
         category: "Artista",
       },
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Produccion",
       },
       {
-        name: "Origamy Sessions",
+        name: "É Origamy Sessions",
         url: "https://www.youtube.com/watch?v=_PjW0kjIeWQ&list=PLESwDoZ83GEbK4N9g2EetGp5KIN-HuE2k",
         category: "Produccion",
       },
