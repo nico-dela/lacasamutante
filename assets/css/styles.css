@@ -172,7 +172,7 @@ main {
 
 @media (max-width: 480px) {
   .btn-production {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
@@ -236,6 +236,6 @@ footer {
   }
 
   p.paragraph {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
