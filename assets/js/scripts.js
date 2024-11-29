@@ -1,6 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
   let buttonsGenerated = false;
 
+  const fonts = [
+    "'Camifont', sans-serif",
+    "'Candefont', sans-serif",
+    "'Clarifont', sans-serif",
+    "'Julifont', sans-serif",
+    "'Teofont', sans-serif",
+    "'Tobecofont', sans-serif",
+  ];
+
+  const randomFontIndex = Math.floor(Math.random() * fonts.length);
+
+  // Obtiene el número de la semana del año
+  // function getDayNumber() {
+  //   const hoy = new Date(); // Fecha actual
+  //   const inicioDelAño = new Date(hoy.getFullYear(), 0, 1); // 1 de enero del año actual
+  //   const diferenciaEnMilisegundos = hoy - inicioDelAño; // Diferencia en milisegundos
+  //   const milisegundosPorDia = 1000 * 60 * 60 * 24; // Milisegundos en un día
+
+  //   // Calcular el número de día redondeando hacia abajo
+  //   return Math.floor(diferenciaEnMilisegundos / milisegundosPorDia) + 1;
+  // }
+
+  // Calcula el índice de la fuente basado en la semana actual
+  // const currentDay = getDayNumber();
+  // console.log("currentDay", currentDay);
+  // const fontIndex = ;
+
+  // Aplica la fuente al body
+  document.body.style.fontFamily = fonts[randomFontIndex];
+
+  console.log(`Fuente actual: ${fonts[randomFontIndex]}`);
+
   function generateProductionButtons() {
     const productionsButtonsContainer = document.getElementById(
       "productions-buttons-container"
@@ -12,7 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
         url: "https://open.spotify.com/artist/42HFQJwZtGRwxoVlDwgdgK",
         category: "Proyecto",
       },
-      { name: "Á Nubila", url: "https://linktr.ee/nubila", category: "Proyecto" },
+      {
+        name: "Á Nubila",
+        url: "https://linktr.ee/nubila",
+        category: "Proyecto",
+      },
       {
         name: "Lara Fernandez Ú",
         url: "https://open.spotify.com/artist/691Dk9GKS8rAgDUpfkMwPS",
