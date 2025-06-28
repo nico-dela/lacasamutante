@@ -5,13 +5,13 @@ const translations = {
     aboutUs: {
       header: "Sobre La Casa",
       paragraph1:
-        "Somos un espacio de producción artística ubicado en el barrio Jardín de Córdoba, Argentina. Nos dedicamos a fomentar la producción cultural independiente mediante la colaboración y la autogestión.",
+        "Nos dedicamos a la producción cultural independiente mediante la colaboración y la autogestión colectiva, trabajamos en un espacio multidisciplinar y artístico ubicado en el barrio Jardín de Córdoba, Argentina.",
       paragraph2:
-        "<strong>Nuestra Historia:</strong> Nacimos hace diez años con el objetivo de abrir un espacio colaborativo donde las ideas y pensamientos puedan florecer libremente. Buscamos alimentar la creatividad, inspirar la producción artística y promover un entorno donde la creación grupal sea la fuerza motriz. Desde entonces, hemos producido numerosos videos, discos y podcasts, trabajando colectivamente para contribuir al arte cordobés.",
+        "<strong>Á Nuestra Historia:</strong> Nos encontramos hace diez años con el objetivo de abrir un espacio colaborativo donde las ideas y pensamientos puedan florecer libremente, para alimentar la  producción artística y promover un entorno donde la creación grupal sea la fuerza motriz. Desde entonces hemos producido todo lo que pudimos y quisimos en los grupos y redes que formamos.",
       paragraph3:
-        "<strong>Nuestro Equipo:</strong> Contamos con un equipo diverso y en constante evolución, compuesto por personas de distintos orígenes y áreas de interés: plásticos, musicales, visuales, poéticos, tecnológicos, científicos, políticos. Cada miembro aporta su energía y visión, haciendo de nuestro espacio un lugar de creación continua.",
+        "<strong>É Equipo</strong> Somxs un equipo diverso de personas con distintos orígenes y áreas de interés: plásticos, musicales, visuales, poéticos, tecnológicos, científicos, políticos. Cada unx aporta su trabajo y proyectos haciendo del espacio compartido, un lugar de creación continua y en transformación.",
       paragraph4:
-        "<strong>Valores y Objetivos:</strong> Nos esforzamos por evitar las categorías rígidas y fomentar la coexistencia armoniosa de múltiples proyectos. Creemos en la creación conjunta y en la integralidad del proceso artístico. Rechazamos las separaciones que diluyen el sentido de hacer y valoramos la sincronía colectiva como una poética que guía, organiza y ofrece temáticas. Queremos crear un espacio donde la creatividad y la inspiración se alimenten mutuamente.",
+        "<strong>Ú ¿Qué nos importa?: </strong> Evitar categorías rígidas entre artes y fomentar la coexistencia armoniosa de múltiples proyectos estéticos. Creer en la creación conjunta y en la integralidad del proceso artístico. Rechazar las separaciones que diluyen el sentido de hacer práctico  y el trabajo intelectual. Valorar <strong> la sincronía colectiva como una poética </strong> que guía, organiza y ofrece temáticas. Crear un espacio donde la imaginación y la elaboración creativa se alimenten mutuamente.",
     },
     productions: {
       header: "Producciones, Proyectos y Artistas",
@@ -30,7 +30,7 @@ const translations = {
       location: "Ubicación: Bº Jardín, Córdoba, Argentina.",
     },
     footer:
-      "Este sitio fue creado enteramente por artistxs y técnicxs de La Casa.",
+      "La web se encuentra intervenida hoy por {fontName}",
   },
   en: {
     title: "La Casa Mutante",
@@ -38,13 +38,13 @@ const translations = {
     aboutUs: {
       header: "About Us",
       paragraph1:
-        "We are an artistic production space located in the Jardín neighborhood of Córdoba, Argentina. We focus on promoting independent cultural production through collaboration and self-management.",
+        "We are dedicated to independent cultural production through collaboration and collective self-management, working in a multidisciplinary and artistic space located in the Jardín neighborhood of Córdoba, Argentina.",
       paragraph2:
-        "<strong>Our History:</strong> We emerged ten years ago with the aim of creating a collaborative space where ideas and thoughts could flourish freely. Our mission is to nurture creativity, inspire artistic production, and foster an environment where group creation drives us forward. Since then, we have produced numerous videos, records, and podcasts, working collectively to contribute to Cordoban art.",
+        "<strong>Á Our History:</strong> We met ten years ago with the aim of opening a collaborative space where ideas and thoughts can flourish freely, to nurture artistic production and promote an environment where group creation is the driving force. Since then we have produced everything we could and wanted to in the groups and networks we formed.",
       paragraph3:
-        "<strong>Our Team:</strong> Our diverse and constantly evolving team is made up of individuals from various backgrounds and interests: visual, musical, poetic, technological, scientific, and political. Each member brings their energy and vision, making our space a place of continuous creation.",
+        "<strong>É Team:</strong> We are a diverse team of people with different backgrounds and areas of interest: plastic, musical, visual, poetic, technological, scientific, political. Each one contributes their work and projects making the shared space a place of continuous creation and transformation.",
       paragraph4:
-        "<strong>Values and Objectives:</strong> We strive to avoid rigid categories and promote the harmonious coexistence of multiple projects. We believe in creating together and that artistic elaboration is always integral. We reject separations that dilute the sense of doing and value collective synchronicity as a guiding poetic. Our goal is to create a space where creativity and inspiration mutually nourish each other.",
+        "<strong>Ú What do we care?</strong> Avoid rigid categories between the arts and encourage the harmonious coexistence of multiple aesthetic projects. Believe in joint creation and in the integrality of the artistic process. Reject separations that dilute the sense of practical work and intellectual work. To value <string> collective synchrony as a poetics </string> that guides, organizes and offers themes. To create a space where imagination and creative elaboration feed each other.",
     },
     productions: {
       header: "Productions, Projects and Artists",
@@ -63,7 +63,7 @@ const translations = {
       location: "Location: Jardín neighborhood, Córdoba, Argentina.",
     },
     footer:
-      "This website was entirely created by artists and technicians of La Casa.",
+      "The site is being intervened today by {fontName}.",
   },
 };
 
