@@ -1,41 +1,41 @@
 @font-face {
-  font-family: "Camifont";
-  src: url("../fonts/Camifont-Regular.ttf") format("truetype");
+  font-family: "Yenji";
+  src: url("../fonts/Yenji-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Candefont";
-  src: url("../fonts/Candefont-Regular.ttf") format("truetype");
+  font-family: "Candela";
+  src: url("../fonts/Candela-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Clarifont";
-  src: url("../fonts/Clarifont-Regular.ttf") format("truetype");
+  font-family: "Clari";
+  src: url("../fonts/Clari-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Julifont";
-  src: url("../fonts/Julifont-Regular.ttf") format("truetype");
+  font-family: "Juli";
+  src: url("../fonts/Juli-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Teofont";
-  src: url("../fonts/Teofont-Regular.ttf") format("truetype");
+  font-family: "Mateo";
+  src: url("../fonts/Mateo-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Tobecofont";
-  src: url("../fonts/Tobecofont-Regular.ttf") format("truetype");
+  font-family: "Tobeco";
+  src: url("../fonts/Tobeco-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
