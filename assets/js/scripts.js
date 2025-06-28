@@ -2,36 +2,30 @@ document.addEventListener("DOMContentLoaded", function () {
   let buttonsGenerated = false;
 
   const fonts = [
-    "'Camifont', sans-serif",
-    "'Candefont', sans-serif",
-    "'Clarifont', sans-serif",
-    "'Julifont', sans-serif",
-    "'Teofont', sans-serif",
-    "'Tobecofont', sans-serif",
+    "'Yenji', sans-serif",
+    "'Candela', sans-serif",
+    "'Clari', sans-serif",
+    "'Juli', sans-serif",
+    "'Mateo', sans-serif",
+    "'Tobeco', sans-serif",
   ];
 
-  const randomFontIndex = Math.floor(Math.random() * fonts.length);
+  // Obtiene el número de día del año
+  function getDayNumber() {
+    const hoy = new Date();
+    const inicioDelAño = new Date(hoy.getFullYear(), 0, 1);
+    const diferenciaEnMilisegundos = hoy - inicioDelAño;
+    const milisegundosPorDia = 1000 * 60 * 60 * 24;
+    return Math.floor(diferenciaEnMilisegundos / milisegundosPorDia) + 1;
+  }
 
-  // Obtiene el número de la semana del año
-  // function getDayNumber() {
-  //   const hoy = new Date(); // Fecha actual
-  //   const inicioDelAño = new Date(hoy.getFullYear(), 0, 1); // 1 de enero del año actual
-  //   const diferenciaEnMilisegundos = hoy - inicioDelAño; // Diferencia en milisegundos
-  //   const milisegundosPorDia = 1000 * 60 * 60 * 24; // Milisegundos en un día
+  const currentDay = getDayNumber();
+  const fontIndex = currentDay % fonts.length;
 
-  //   // Calcular el número de día redondeando hacia abajo
-  //   return Math.floor(diferenciaEnMilisegundos / milisegundosPorDia) + 1;
-  // }
+  document.body.style.fontFamily = fonts[fontIndex];
+  const currentFontName = fonts[fontIndex].split("'")[1];
+  window.currentFontName = currentFontName;
 
-  // Calcula el índice de la fuente basado en la semana actual
-  // const currentDay = getDayNumber();
-  // console.log("currentDay", currentDay);
-  // const fontIndex = ;
-
-  // Aplica la fuente al body
-  document.body.style.fontFamily = fonts[randomFontIndex];
-
-  console.log(`Fuente actual: ${fonts[randomFontIndex]}`);
 
   function generateProductionButtons() {
     const productionsButtonsContainer = document.getElementById(
@@ -279,6 +273,13 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       if (translation) {
+        // If this is the footer text, replace the placeholder with the font name
+        if (translationKey === "footer") {
+          translation = translation.replace(
+            "{fontName}",
+            window.currentFontName
+          );
+        }
         element.innerHTML = translation;
       } else {
         console.warn(
