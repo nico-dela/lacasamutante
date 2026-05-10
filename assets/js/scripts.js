@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
   let buttonsGenerated = false;
 
   const fonts = [
-    "'Yenji', sans-serif",
+    // "'Yenji', sans-serif",
     "'Candela', sans-serif",
-    "'Clari', sans-serif",
-    "'Juli', sans-serif",
-    "'Mateo', sans-serif",
-    "'Tobeco', sans-serif",
+    // "'Clari', sans-serif",
+    // "'Juli', sans-serif",
+    // "'Mateo', sans-serif",
+    // "'Tobeco', sans-serif",
   ];
 
   // Obtiene el número de día del año
@@ -181,10 +181,10 @@ document.addEventListener("DOMContentLoaded", function () {
       Proyecto: "#ef332e",
     };
 
-    const categoryStyle = {
-      Artista: "italic",
-      Produccion: "lowercase",
-      Proyecto: "uppercase",
+    const categoryPresentation = {
+      Artista: { fontStyle: "italic", textTransform: "none" },
+      Produccion: { fontStyle: "normal", textTransform: "lowercase" },
+      Proyecto: { fontStyle: "normal", textTransform: "uppercase" },
     };
 
     function shuffle(array) {
@@ -209,45 +209,114 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.className = "btn-production";
       btn.textContent = button.name;
       btn.target = "_blank";
+      btn.rel = "noopener noreferrer";
       btn.style.color = categoryColors[button.category] || "black";
-      btn.style.fontStyle = categoryStyle[button.category] || "none";
-      btn.style.textTransform = categoryStyle[button.category] || "none";
+      const presentation = categoryPresentation[button.category] || {
+        fontStyle: "normal",
+        textTransform: "none",
+      };
+      btn.style.fontStyle = presentation.fontStyle;
+      btn.style.textTransform = presentation.textTransform;
 
       productionsButtonsContainer.appendChild(btn);
     });
   }
 
+  const LANG_STORAGE_KEY = "lacasa-mutante-lang";
+
   const headers = document.querySelectorAll(".accordion-header");
 
   headers.forEach((header) => {
-    header.addEventListener("click", function () {
-      const content = this.nextElementSibling;
+    const section = header.closest("section");
+    const content = header.nextElementSibling;
+    const panelId =
+      content && content.id
+        ? content.id
+        : section && section.id
+          ? `${section.id}-panel`
+          : null;
 
-      if (this.parentElement.id === "producciones" && !buttonsGenerated) {
+    header.setAttribute("role", "button");
+    header.setAttribute("tabindex", "0");
+    header.setAttribute("aria-expanded", "false");
+    if (panelId && content) {
+      content.id = panelId;
+      header.setAttribute("aria-controls", panelId);
+    }
+
+    function accordionPanelHeightCapPx() {
+      if (!window.matchMedia("(orientation: landscape)").matches) {
+        return null;
+      }
+      const h = window.innerHeight;
+      if (h <= 420) {
+        return Math.round(h * 0.78);
+      }
+      if (h <= 520) {
+        return Math.round(h * 0.72);
+      }
+      if (h <= 720) {
+        return Math.round(h * 0.74);
+      }
+      return null;
+    }
+
+    function applyPanelOpenHeight(contentEl) {
+      const cap = accordionPanelHeightCapPx();
+      const natural = contentEl.scrollHeight;
+      const useCap = cap != null && natural > cap;
+      contentEl.style.maxHeight = (useCap ? cap : natural) + "px";
+      contentEl.style.overflowY = useCap ? "auto" : "";
+      if (useCap) {
+        contentEl.setAttribute("data-scroll-panel", "true");
+      } else {
+        contentEl.removeAttribute("data-scroll-panel");
+      }
+    }
+
+    function toggleSection() {
+      const contentEl = header.nextElementSibling;
+
+      if (header.parentElement.id === "producciones" && !buttonsGenerated) {
         generateProductionButtons();
         buttonsGenerated = true;
       }
 
-      const isActive = this.classList.contains("active");
+      const isActive = header.classList.contains("active");
 
       document
         .querySelectorAll(".accordion-header.active")
         .forEach((activeHeader) => {
-          if (activeHeader !== this) {
+          if (activeHeader !== header) {
             activeHeader.classList.remove("active");
-            activeHeader.nextElementSibling.style.maxHeight = "0";
-            activeHeader.nextElementSibling.style.padding = "0 10px";
+            activeHeader.setAttribute("aria-expanded", "false");
+            const sibling = activeHeader.nextElementSibling;
+            sibling.style.maxHeight = "0";
+            sibling.style.padding = "0 10px";
+            sibling.style.overflowY = "";
+            sibling.removeAttribute("data-scroll-panel");
           }
         });
 
-      this.classList.toggle("active", !isActive);
+      header.classList.toggle("active", !isActive);
+      header.setAttribute("aria-expanded", String(!isActive));
 
       if (!isActive) {
-        content.style.maxHeight = content.scrollHeight + "px";
-        content.style.padding = "10px";
+        applyPanelOpenHeight(contentEl);
+        contentEl.style.padding = "10px";
       } else {
-        content.style.maxHeight = "0";
-        content.style.padding = "0 10px";
+        contentEl.style.maxHeight = "0";
+        contentEl.style.padding = "0 10px";
+        contentEl.style.overflowY = "";
+        contentEl.removeAttribute("data-scroll-panel");
+      }
+    }
+
+    header.addEventListener("click", toggleSection);
+    header.addEventListener("keydown", function (ev) {
+      if (ev.key === "Enter" || ev.key === " ") {
+        ev.preventDefault();
+        toggleSection();
       }
     });
   });
@@ -257,29 +326,50 @@ document.addEventListener("DOMContentLoaded", function () {
   if (languageSelector) {
     languageSelector.addEventListener("change", function () {
       const selectedLanguage = this.value;
+      try {
+        localStorage.setItem(LANG_STORAGE_KEY, selectedLanguage);
+      } catch (_) {
+        /* ignore quota / private mode */
+      }
       translatePage(selectedLanguage);
     });
   }
 
+  function resolveTranslation(language, translationKey) {
+    const keys = translationKey.split(".");
+    let node = translations[language];
+    for (let i = 0; i < keys.length; i++) {
+      if (node == null || typeof node !== "object") {
+        return null;
+      }
+      node = node[keys[i]];
+    }
+    return typeof node === "string" ? node : null;
+  }
+
   function translatePage(language) {
+    document.documentElement.lang = language === "en" ? "en" : "es";
+
+    if (languageSelector) {
+      const aria = resolveTranslation(language, "languageSelectorAria");
+      if (aria) {
+        languageSelector.setAttribute("aria-label", aria);
+      }
+    }
+
     const elementsToTranslate = document.querySelectorAll("i18n-key");
     elementsToTranslate.forEach((element) => {
       const translationKey = element.getAttribute("key");
-      const keys = translationKey.split(".");
-      let translation = translations[language];
-
-      keys.forEach((key) => {
-        translation = translation[key];
-      });
+      let translation = resolveTranslation(language, translationKey);
 
       if (translation) {
         // If this is the footer text, replace the placeholder with the font name
-        if (translationKey === "footer") {
-          translation = translation.replace(
-            "{fontName}",
-            window.currentFontName
-          );
-        }
+        // if (translationKey === "footer") {
+        //   translation = translation.replace(
+        //     "{fontName}",
+        //     window.currentFontName
+        //   );
+        // }
         element.innerHTML = translation;
       } else {
         console.warn(
@@ -291,26 +381,32 @@ document.addEventListener("DOMContentLoaded", function () {
     const elementsWithAlt = document.querySelectorAll("[data-i18n-alt]");
     elementsWithAlt.forEach((element) => {
       const altKey = element.getAttribute("data-i18n-alt");
-      const keys = altKey.split(".");
-      let translation = translations[language];
+      const altTranslation = resolveTranslation(language, altKey);
 
-      keys.forEach((key) => {
-        translation = translation[key];
-      });
-
-      if (translation) {
-        element.setAttribute("alt", translation);
+      if (altTranslation) {
+        element.setAttribute("alt", altTranslation);
       } else {
         console.warn(`Missing alt translation for ${altKey} in ${language}`);
       }
     });
 
     const titleElement = document.querySelector('title[data-i18n="title"]');
-    if (titleElement) {
-      titleElement.innerText = translations[language].title;
+    if (titleElement && translations[language] && translations[language].title) {
+      titleElement.textContent = translations[language].title;
     }
   }
 
-  const initialLanguage = languageSelector ? languageSelector.value : "es";
+  let initialLanguage = languageSelector ? languageSelector.value : "es";
+  try {
+    const stored = localStorage.getItem(LANG_STORAGE_KEY);
+    if (stored === "es" || stored === "en") {
+      initialLanguage = stored;
+      if (languageSelector) {
+        languageSelector.value = stored;
+      }
+    }
+  } catch (_) {
+    /* ignore */
+  }
   translatePage(initialLanguage);
 });
