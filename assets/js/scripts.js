@@ -173,6 +173,26 @@ document.addEventListener("DOMContentLoaded", function () {
         url: "https://github.com/nico-dela",
         category: "Artista",
       },
+      {
+        name: "Fátima Juarez",
+        url: "www.behance.net/ftimajurez1",
+        category: "Artista",
+      },
+      {
+        name: "Esmarive",
+        url: "https://open.spotify.com/artist/2KXKAcAN43icVSYiv3aOMq?si=XFWhhM37Tl6X8_Fc5R8-WA",
+        category: "Artista",
+      },
+      {
+        name: "Revista Vereda",
+        url: "https://linktr.ee/revistavereda",
+        category: "Proyecto",
+      },
+      {
+        name: "Frappzter",
+        url: "https://www.behance.net/frappzter_",
+        category: "Artista",
+      },
     ];
 
     const categoryColors = {
