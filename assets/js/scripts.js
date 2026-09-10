@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         name: "Lara Fernandez Ú",
-        url: "https://open.spotify.com/artist/691Dk9GKS8rAgDUpfkMwPS",
+        url: "https://linktr.ee/Lara.e.f.e",
         category: "Artista",
       },
       {
@@ -55,12 +55,12 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         name: "Psieledas Ó",
-        url: "https://psieledas.bandcamp.com/",
+        url: "https://open.spotify.com/artist/1NsKUcJweb8zkY6zowh959",
         category: "Artista",
       },
       {
         name: "Irmanas",
-        url: "https://www.youtube.com/@Irmanas-wi9zg",
+        url: "https://linktr.ee/irma__nas",
         category: "Proyecto",
       },
       {
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         name: "Araceli Bonfigli",
-        url: "https://open.spotify.com/artist/6bj6JfRNNwpb3gpYDXEm2F",
+        url: "https://aracelibonfigli.com.ar/",
         category: "Artista",
       },
       {
@@ -95,12 +95,12 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         name: "Luz Peña",
-        url: "https://www.instagram.com/luz.penia/",
+        url: "https://www.behance.net/luzmarapea1",
         category: "Artista",
       },
       {
         name: "Lil Lise Ó",
-        url: "https://www.behance.net/ulisesgencare",
+        url: "https://www.instagram.com/lil.lise.mp4",
         category: "Artista",
       },
       {
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         name: "É Origamy Sessions",
-        url: "https://www.youtube.com/watch?v=_PjW0kjIeWQ&list=PLESwDoZ83GEbK4N9g2EetGp5KIN-HuE2k",
+        url: "https://www.youtube.com/@origamysessions700/videos",
         category: "Produccion",
       },
       {
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         name: "Facundo Caceres",
-        url: "https://www.youtube.com/watch?v=Wk3Vi8BAsEs",
+        url: "https://www.instagram.com/facundocaceresrojo/",
         category: "Artista",
       },
       {
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         name: "Fátima Juarez",
-        url: "www.behance.net/ftimajurez1",
+        url: "https://www.behance.net/ftimajurez1",
         category: "Artista",
       },
       {
@@ -192,6 +192,16 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Frappzter",
         url: "https://www.behance.net/frappzter_",
         category: "Artista",
+      },
+      {
+        name: "Mandy Hitt",
+        url: "https://www.instagram.com/mandy_hitt/",
+        category: "Artista",
+      },
+      {
+        name: "Mariano Garione",
+        url: "https://linktr.ee/MarianoGarione",
+        category: "Tecnico en sonido",
       },
     ];
 
